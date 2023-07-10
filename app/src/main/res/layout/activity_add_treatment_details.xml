@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10sp"
+    android:orientation="vertical"
+    tools:context=".AddTreatmentDetailsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appointment"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/purple_700"
+        android:gravity="center"
+        android:layout_marginBottom="10sp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/appointment_card_layout"
+            android:orientation="vertical"
+            android:paddingBottom="20sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Treatment Details:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edt_treatment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/text_card_layout"
+                android:gravity="top|left"
+                android:hint="Treatment Name"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:overScrollMode="always"
+                android:padding="10sp"
+                android:paddingLeft="10sp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"/>
+
+            <EditText
+                android:id="@+id/edt_medicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/text_card_layout"
+                android:gravity="top|left"
+                android:hint="Enter Medicines details"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:overScrollMode="always"
+                android:padding="10sp"
+                android:paddingLeft="10sp"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"/>
+
+
+            <EditText
+                android:id="@+id/edt_fees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@drawable/text_card_layout"
+                android:hint="Enter Fees"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

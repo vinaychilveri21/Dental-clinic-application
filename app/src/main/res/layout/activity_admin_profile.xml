@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminProfileActivity">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:text="Admin Profile"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:background="@drawable/appointment_card_layout"
+                android:orientation="vertical"
+                android:padding="5sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username: "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_margin="10sp"
+                    android:id="@+id/txt_username"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name: "
+                    android:layout_margin="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/txt_name"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:layout_margin="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/txt_email"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile: "
+                    android:layout_margin="10sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/txt_mobile"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address: "
+                    android:layout_margin="10sp"
+                    android:lines="7"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/txt_address"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

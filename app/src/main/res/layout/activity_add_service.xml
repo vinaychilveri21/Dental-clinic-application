@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddServiceActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a new Service"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50sp"
+        android:textColor="@color/purple_700"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp"
+        android:padding="7sp"
+        android:background="@drawable/appointment_card_layout">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_service_name"
+            android:layout_margin="20sp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textColorHint="@color/white"
+            android:hint="Enter Service Name"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:text="Add"
+            android:onClick="insert"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

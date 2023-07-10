@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddMedicineActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:layout_margin="3sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appointment_card_layout"
+        android:layout_margin="10sp"
+        android:padding="10sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Treatment Details:"
+            android:layout_marginLeft="10sp"
+            android:textStyle="bold"
+            android:layout_margin="10sp"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/edt_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_card_layout"
+            android:padding="10sp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="Enter Medicine Name"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:layout_margin="10sp"
+            android:scrollbars="vertical"
+            android:lines="5"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20sp"
+            android:paddingTop="10sp"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60sp"
+                android:layout_weight="0.3"
+                android:id="@+id/btn_add"
+                android:text="ADD"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

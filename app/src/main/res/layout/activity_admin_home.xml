@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminHomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Home"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.5"
+                        android:text="service"
+                        android:id="@+id/btn_service"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:onClick="edit_service"
+                        tools:ignore="OnClick" />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.5"
+                        android:text="Appointment"
+                        android:onClick="edit_appointment"
+                        android:id="@+id/btn_appointment"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.5"
+                        android:text="Profile"
+                        android:id="@+id/btn_admin"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="admin_profile"
+                        android:layout_marginRight="20dp"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.5"
+                        android:text="Patient list"
+                        android:id="@+id/btn_pnt_lst"
+                        android:layout_marginTop="20dp"
+                        android:onClick="patient_list"
+                        android:layout_marginRight="20dp"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.5"
+                        android:text="Contact us"
+                        android:id="@+id/btn_cnt_us"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:onClick="edit_contact_us"
+                        android:layout_marginRight="20dp"
+                        />
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="0.5"
+                        android:text="About Us"
+                        android:id="@+id/btn_abt_us"
+                        android:onClick="edit_about_us"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+                </TableRow>
+
+
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:onClick="admin_logout"
+                    android:text="Logout"
+                    android:paddingHorizontal="40sp"
+                    android:layout_margin="15sp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

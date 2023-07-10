@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10sp"
+        android:padding="5sp"
+        android:background="@drawable/appointment_card_layout"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_username"
+            android:text="Username: "
+            android:layout_margin="5sp"
+            android:padding="7sp"
+            android:background="@drawable/text_card_layout"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_service"
+            android:padding="7sp"
+            android:text="Service: "
+            android:layout_margin="5sp"
+            android:background="@drawable/text_card_layout"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_date"
+            android:text="Date: "
+            android:padding="7sp"
+            android:background="@drawable/text_card_layout"
+            android:layout_margin="5sp"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <ToggleButton
+                android:id="@+id/appointment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_margin="10sp"
+                android:textOn="Accepted"
+                android:textOff="Declined"
+                android:checked="false"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Add Details"
+                android:id="@+id/btn_details"
+                android:layout_margin="10sp"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

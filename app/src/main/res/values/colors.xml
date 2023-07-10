@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#68A4F5</color>
+    <color name="purple_500">#4A93F7</color>
+    <color name="purple_700">#0B4DA7</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="col">#F4976C</color>
+    <color name="col1">#539CFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">@android:color/holo_red_light</color>
+    <color name="green">#46BD4B</color>
+</resources>
